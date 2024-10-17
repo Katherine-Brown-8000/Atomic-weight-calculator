@@ -1,7 +1,7 @@
 import json
 import requests
 
-url = "https://raw.githubusercontent.com/Katherine-Brown-8000/Molarity-Calculator/refs/heads/main/Atomic_Mass_Dictionary.json"
+url = "https://raw.githubusercontent.com/Katherine-Brown-8000/Computational-Chemistry/refs/heads/main/Atomic_mass_reformat.json"
 response = requests.get(url)
 
 if response.status_code == 200:
