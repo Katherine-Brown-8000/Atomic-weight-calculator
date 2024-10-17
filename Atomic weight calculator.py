@@ -12,7 +12,7 @@ else:
 # enter your total compounds here
 total = 0
 while True:
-    compound = input("enter the abriviation of your compounds, type done when finished: ").strip()
+    compound = input("enter the abbreviation of your compounds, type done when finished: ").strip()
     if compound.lower() == 'done':
         break
 
