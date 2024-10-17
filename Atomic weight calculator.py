@@ -12,19 +12,19 @@ else:
 # enter your total compounds here
 total = 0
 while True:
-    compound = input("enter the abbreviation of your compounds, type done when finished: ").strip()
-    if compound.lower() == 'done':
+    element = input("enter the abbreviation of your element, type done when finished: ").strip()
+    if element.lower() == 'done':
         break
 
-    count = input(f"enter count for {compound}: ").strip()
+    count = input(f"enter count for {element}: ").strip()
 
     try:
         count = int(count)
-        mass = atomic_mass.get(compound)
+        mass = atomic_mass.get(element)
         if mass is not None:
             total += mass * count
         else:
-            print(f"Error: atomic mass for {compound} not found")
+            print(f"Error: atomic mass for {element} not found")
     except ValueError:
         print('no')
 
